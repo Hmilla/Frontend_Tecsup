@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Registro de Usuarios</h1>
+    <form action="">
+      <p><input type="text" placeholder="Nombre" name="nombre"/></p>
+      <p><input type="text" placeholder="Apellido" name="apellido" /></p>
+      <p><input type="email" placeholder="E-mail" name="e-mail"/></p>
+      <p><input type="date" placeholder="Fecha de Nacimiento" name="birthday"/></p>
+      <p><input type="tel" placeholder="Telefono" name="telefono"/></p>
+      <p><input type="number" placeholder="DNI" name="DNI"/></p>
+      <p>Genero</p>
+      <p>
+        <label for="masculino">
+            Masculino
+            <input type="radio" name="genero" id="masculino" value="masculino"/>
+        </label>
+      </p>
+      <p>
+        <label for="femenino">
+            Femenino
+            <input type="radio" name="genero" id="femenino" value="femenino"/>
+        </label>
+      </p>
+      <p>
+        <label for="otro">
+            Otro
+            <input type="radio" name="genero" id="otro" value="femenino"/>
+        </label>
+      </p>
+      <p>Paises</p>
+      <select name="pais" id="">
+        <option value="peru">Perú</option>
+        <option value="argentina">Argentina</option>
+        <option value="chile">Chile</option>
+      </select>
+      <p><input type="password" placeholder="Ingrese su contraseña" /></p>
+      
+      <p>Ciudades</p>
+      <select name="ciudad" id="">
+        <option value="" disabled selected>Paises</option>
+        <option value="lima">Lima</option>
+        <option value="cuzco">Cuzco</option>
+        <option value="ancash">Ancash</option>
+        <option value="trujillo">Trujillo</option>
+        <option value="ica">Ica</option>
+      </select>
+
+      <p>Cursos</p>
+      <p>Javascript <input type="checkbox" name="curso_1"/></p>
+      <p>HTML <input type="checkbox" name="curso_2"/></p>
+      <p>CSS <input type="checkbox" name="curso_3"/></p> 
+      <p>React Js <input type="checkbox" name="curso_4"/></p>
+      <p>Next Js <input type="checkbox" name="curso_5"/></p>
+      
+      <!--READONLY-->
+
+      <p><input type="text" name="" id="" value="Peru" readonly/></p>
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
