@@ -1,0 +1,116 @@
+/* Comentario */
+
+body{
+    background-color: rgb(255, 233, 233);
+}
+
+.clase1{
+    border: solid;
+    border-color: black;
+}
+
+#selector-id{
+    background-color: aqua;
+}
+
+button{
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+button:active{
+    font-size: 18px;
+    color: orange;
+}
+
+button:focus{
+    border: solid;
+    border-color: brown;
+}
+
+/* Pseudoclase: Primer y Ultimo Hijo */
+
+.hijos_pseudo p:first-child{
+    background-color: rgb(225, 65, 65);
+}
+.hijos_pseudo p:last-child{
+    background-color: royalblue;
+}
+.hijos_pseudo p:nth-child(3){
+    color: aqua;
+}
+
+/* n son todos-> 2n pares -> 2n-1 impares*/
+.hijos_pseudo p:nth-child(2n-1){
+    background-color: aqua;
+}
+
+/* before */
+.prueba-before::before{
+    color: red;
+    content: 'hola';
+    font-size: 30px;
+}
+
+.prueba-after::after{
+    color: red;
+    content: 'hola';
+    font-size: 30px;
+}
+
+.prueba-firstletter::first-letter{
+    background-color: aqua;
+}
+
+/* :required tmb existe */
+.input1:invalid{
+    border: 1px solid red;
+}
+
+.input1:valid{
+    border: 1px solid green;
+}
+
+.padre ul li:nth-child(3){
+    background-color: aqua;
+}
+/* .padre .selecciona-este-li{
+    background-color: green;
+} */
+
+/* Forma mas recomendada es usar una unica clase */
+.selecciona-este-li{
+    background-color: gold;
+}
+
+/* Herencia */
+.container{
+    color: blue;
+    font-size: 10px;
+    border: solid green;
+}
+
+.child{
+    border: inherit;
+    font-size: initial;
+}
+
+.mi-parrafo{
+    padding: 10px;
+    border: solid 1px green;
+}
+
+.mi-parrafo{
+    border: solid 2px red;
+    /* em toma el valor mas cercano */
+    /* rem toma la medida del root o del html 16px aprox */
+}

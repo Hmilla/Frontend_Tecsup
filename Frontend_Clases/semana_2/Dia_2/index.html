@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- <p>Soy un texto</p> -->
+    <p class="clase1">Selector por clase</p>
+    <p id="selector-id">Selector por id</p>
+
+
+    <h2>Pseudo Clases</h2>
+    <button>Boton con :hover</button>
+    <input type="text">
+
+    <h2>Hijos</h2>
+    <div class="hijos_pseudo">
+        <p class="p">Parrafo1</p>
+        <p class="p">Parrafo2</p>
+        <p class="p">Parrafo3</p>
+        <p class="p">Parrafo4</p>
+        <p class="p">Parrafo5</p>
+        <p class="p">Parrafo6</p>
+    </div>
+    
+    <!-- Pseudo Elementos -->
+    <h2>::before</h2>
+    <div class="prueba-before">before</div>
+
+    <h2>::first letter</h2>
+    <div class="prueba-firstletter">first letter</div>
+
+    <!-- Pseudo Clase de validación -->
+    <h2>CSS DE VALIDACION</h2>
+    <form action="">
+        <input class="input1" type="text" placeholder="caja de texto">
+        <input class="input1" type="text" placeholder="caja de texto" required>
+        <input type="submit">
+    </form>
+
+    <!-- Selectores Combinados y multiples -->
+    <h2>Selectores Combinados y multiples</h2>
+    <div class="padre">
+        <ul>
+            <li>Item 1</li>
+            <li class="selecciona-este-li">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <!-- Herencia -->
+    <h2>Herencia</h2>
+    <div class="container">
+        <p>Parrafo Padre</p>
+        <div class="child">
+            <p>Parrafo Hijo</p>
+        </div>
+    </div>
+
+    <!-- cascada -->
+    <h2>Cascada</h2>
+    <div class="mi-parrafo">mi parrafo</div>
+    
+
+</body>
+</html>
